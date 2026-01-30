@@ -1,0 +1,9 @@
+body {
+    background-color: rgba(0, 255, 255, 0.151);
+}
+h1 {
+    border: 6px solid rgba(212, 71, 255, 0.253);
+}
+p {
+    border: 6px solid rgba(255, 0, 34, 0.24);
+}
