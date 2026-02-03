@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+
+    <style>
+        body {
+            background-image: url('surfing-nyan-cat.gif');
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p {
+            -webkit-text-stroke: 0.2px rgb(73, 17, 255);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Imagem de Fundo</h1>
+    <p>Exemplos de imagens de fundo</p>
+
+    <!-- <p style="background-image: url(surfing-nyan-cat.gif);">O formato foi introduzido em 1987 pela CompuServe a fim de fornecer um formato de imagem a cores para as suas áreas de descarga de ficheiros, <br> em substituição do formato anterior, RLE, que era apenas a preto e branco. <br> O GIF tornou-se popular porque utilizava compressão de dados LZW, mais eficiente que o run-length encoding usado por formatos como o PCX e o MacPaint, o que permitia que imagens relativamente grandes fossem baixadas num tempo razoável, mesmo com modems muito lentos. <br> A opção de intercalamento (interlacing), que armazena as linhas da imagem fora de ordem de tal modo que permitia que uma imagem parcialmente descarregada fosse reconhecível até certo ponto, <br> também contribuiu para a popularidade do formato GIF, visto que o utilizador podia parar o descarregamento da imagem, se ela não fosse no que pretendia.</p> -->
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="w3schoolscom_logo.jpg">
+        <source media="(min-width: 465px)" srcset="w3schoolscom_logo.jpg">
+    </picture>
+</body>
+</html>
