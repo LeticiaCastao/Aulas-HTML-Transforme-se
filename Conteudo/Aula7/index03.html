@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Image</title>
+    <title>Lista de Navegação</title>
+
+    <!-- CSS interno! -->
 
     <style>
+
         body {
-            background-image: url('surfing-nyan-cat.gif');
-            color: white;
-            background-repeat: no-repeat;
-            background-size: cover;
+            margin: 0;
+            padding: 0;
         }
-        p {
-            -webkit-text-stroke: 0.2px rgb(73, 17, 255);
+
+        ul {
+            margin: 0px 0px;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            justify-content: center;
+            background-color: rgba(208, 127, 255, 0.377);
         }
+
+        li {
+            padding: 30px 0px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: rgb(99, 17, 17);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        li a:hover {
+            transition: 0.3s;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
 <body>
-    <h1>Imagem de Fundo</h1>
-    <p>Exemplos de imagens de fundo</p>
 
-    <!-- <p style="background-image: url(surfing-nyan-cat.gif);">O formato foi introduzido em 1987 pela CompuServe a fim de fornecer um formato de imagem a cores para as suas áreas de descarga de ficheiros, <br> em substituição do formato anterior, RLE, que era apenas a preto e branco. <br> O GIF tornou-se popular porque utilizava compressão de dados LZW, mais eficiente que o run-length encoding usado por formatos como o PCX e o MacPaint, o que permitia que imagens relativamente grandes fossem baixadas num tempo razoável, mesmo com modems muito lentos. <br> A opção de intercalamento (interlacing), que armazena as linhas da imagem fora de ordem de tal modo que permitia que uma imagem parcialmente descarregada fosse reconhecível até certo ponto, <br> também contribuiu para a popularidade do formato GIF, visto que o utilizador podia parar o descarregamento da imagem, se ela não fosse no que pretendia.</p> -->
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre mim</a></li>
+            <li><a href="">Curiosidade</a></li>
+            <li><a href="">Contatos</a></li>
+        </ul>
+    </div>
 
-    <picture>
-        <source media="(min-width: 650px)" srcset="w3schoolscom_logo.jpg">
-        <source media="(min-width: 465px)" srcset="w3schoolscom_logo.jpg">
-    </picture>
 </body>
 </html>
