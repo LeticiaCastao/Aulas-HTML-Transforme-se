@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+
+    <style>
+        .testebtn {
+            border: 7px black;
+            padding: 30px 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+        .testebtn:houver {
+            background-color: blueviolet;
+            transition: 0.3s;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Botões</h1>
+    <p>Adicionando estilo no botão</p>
+    <button class="testebtn">Clique aqui</button>
+
+    <p>Adicionando botão não clicavel</p>
+    <button disabled>Botão desbilitado</button>
+
+    <hr>
+
+    <p>Botão com JavaScript</p>
+    <button onclick="alert('A turma SP08 é supimpa')">Clique Aqui</button>
+
+    <hr>
+
+    <h4>Botões em Formularios</h4>
+    <p>Exemplos de tipos de botões:</p>
+
+    <form action="https:">
+        <label>Primeiro Nome</label>
+        <input type="text">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar Form</button>
+    </form>
+
+</body>
+</html>
